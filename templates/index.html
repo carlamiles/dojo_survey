@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
+        integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
+        crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <div class="grid-x grid-padding medium-offset-3">
+        <form action="/result" method='post'>
+            Your Name: <input type="text" name='name'>
+            <br>
+            Dojo Location: <select name="locations">
+                <option value="San Jose">San Jose</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Online">Online</option>
+                <option value="Dallas">Dallas</option>
+                <option value="TC">Tysons Corner</option>
+                <option value="Tulsa">Tulsa</option>
+                <option value="Berkeley">Berkeley</option>
+                <option value="Boise">Boise</option>
+                <option value="OC">Orange County</option>
+            </select>
+            <br>
+            <br>
+            Favorite Language: <select name="languages">
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Go">Go</option>
+                <option value="PHP">PHP</option>
+            </select>
+            <br>
+            <br>
+            What is the primary reason why you are you learning to code?
+            <br>
+            <input type="radio" name="goal" value="Start a new job/career"> Start a new job/career
+            <br>
+            <input type="radio" name="goal" value="Start a business/Create a product to sell"> Start a business/Create a
+            product to sell
+            <br>
+            <input type="radio" name="goal" value="Take on more responsibility at my current job"> Take on more
+            responsibility at my current job
+            <br>
+            <input type="radio" name="goal" value="Code for fun/as a hobby"> Code for fun/as a hobby
+            <br>
+            <br>
+            Comment (optional): <textarea name="comment" cols="30" rows="10"></textarea>
+            <input type="submit" value='Submit'>
+        </form>
+    </div>
+</body>
+
+</html>
